@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>job-funnel</title>
+  <style>
+    :root { --ink: #16191f; --muted: #5d6573; --bg: #ffffff; --accent: #1a56b0; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e8eaee; --muted: #9aa3b2; --bg: #111318; --accent: #7aa7f0; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 16px; }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>job-funnel</h1>
+  <p>job-funnel is a personal job-search tracker. It runs on its owner's own computer and reads their own job-search
+    mail, read-only, to keep track of the applications they have sent and the replies they get: acknowledgements,
+    rejections, interview invitations and recruiters' job descriptions.</p>
+  <p>It is used by one person, its developer, for their own Gmail account. It is not offered to anyone else, and
+    there is nothing to sign up for.</p>
+  <ul>
+    <li>It asks Google only for read-only access to Gmail (<code>gmail.readonly</code>). It cannot send, change or
+      delete mail.</li>
+    <li>It reads only job-related messages; other mail is skipped by its sender and subject without being opened.</li>
+    <li>What it reads stays in the owner's private database. It is never sold, shared or used for advertising.</li>
+  </ul>
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <p class="muted">Questions: <a href="https://github.com/rjmillerpy/job-funnel-site/issues">open an issue</a>.</p>
+</main>
+</body>
+</html>
